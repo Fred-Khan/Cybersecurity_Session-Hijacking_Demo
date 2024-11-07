@@ -47,7 +47,7 @@ To capture the frames between the victim and the web server, we need to send out
 #### Step 3: Demonstrate Session Hijacking
 
 1. **Log in as a Victim:**
-   - On the victim machine, log in to the web application using the credentials `hijackdemo/password1`. This will create a session.
+   - On the victim machine, log in to the web application (http://http.thetruthhurts.me/) using the credentials `hijackdemo/password1`. This will create a session.
 
 2. **Capture the Session ID:**
    - Open Wireshark on the attacker machine and start capturing traffic. Apply a filter like `http` or `cookie` to capture HTTP packets.
@@ -55,7 +55,7 @@ To capture the frames between the victim and the web server, we need to send out
    - The attacker, using Wireshark, captures the session ID from the victim's HTTP request.
 
 3. **Hijack the Session:**
-   - On the attacker machine, open the same web application and ensure you are logged out.
+   - On the attacker machine, open the same web application (http://http.thetruthhurts.me/) and ensure you are logged out.
    - Open the browser's developer tools (usually by pressing F12), and go to the "Application" or "Storage" tab, where cookies are listed.
    - Replace the attacker’s session ID with the victim’s session ID that was captured (if there is no cookie to edit, log into the site and log out again).
    - Refresh the page. The attacker now has access to the victim’s session, effectively hijacking it.

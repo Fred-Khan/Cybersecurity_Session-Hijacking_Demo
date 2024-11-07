@@ -91,3 +91,5 @@ If you are interested in reading more about this concepts you can visit the page
 
 - **Session Hijacking**
     - https://www.kaspersky.com/resource-center/definitions/what-is-session-hijacking
+
+If you are also interested in your own session hijacking demo done locally, you can clone [this repository](https://github.com/lewpar/SessionHijackDemo) and deploy it under a LAMP/WAMP stack.
